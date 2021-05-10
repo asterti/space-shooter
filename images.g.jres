@@ -1,0 +1,17 @@
+{
+    "Wdb{9F4_6*C/:Um,b@U#": {
+        "data": "hwQOABAAAAAA/w8AAAAAAPD/////AAAA8P8//P/vTg7w/zzM/P///wC/w8z8/z//8MzMzPz/P//wzMzM/P8/D/DMzMz8/z8P8MzMzPz/Pw8Av8PM///vDvD/PMz//98O8P8////v1ATw/////wBOAAD/DwAAAAAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "girl"
+    },
+    "D9-`T_l?fAeyK*B}I;lD": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMyMCAAAAIBMRETMiAgAgEREREREBACATEREzIgIAADIzIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "bullet"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
