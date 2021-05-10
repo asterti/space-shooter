@@ -1,13 +1,18 @@
 {
-    "Wdb{9F4_6*C/:Um,b@U#": {
-        "data": "hwQOABAAAAAA/w8AAAAAAPD/////AAAA8P8//P/vTg7w/zzM/P///wC/w8z8/z//8MzMzPz/P//wzMzM/P8/D/DMzMz8/z8P8MzMzPz/Pw8Av8PM///vDvD/PMz//98O8P8////v1ATw/////wBOAAD/DwAAAAAA",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "girl"
-    },
     "D9-`T_l?fAeyK*B}I;lD": {
         "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMyMCAAAAIBMRETMiAgAgEREREREBACATEREzIgIAADIzIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "bullet"
+    },
+    "Wdb{9F4_6*C/:Um,b@U#": {
+        "data": "hwQOABAAAADw/wAAAAAAAP////8P4EQA///D//9OTQD/z8P8////APA7zMz//2P/z8zMzP//Y//PzMzM//9jD8/MzMz//2MPz8zMzP//Y//wO8zM//9j///Pw/z///wA///D//9OTQD/////D+BEAPD/AAAAAAAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "girl"
+    },
+    "$j%%dW:s2s~HZ?q?_=y@": {
+        "data": "hwQQABAAAAAAAAAAzMwAAAAAAMzLywwAAAAA3Lu8zAAAAMzcvbzMAMDMu7zdzMwAvN27y93LzADc3d2728vMDNvd3bvby7wM293du9u7vMvb3d2929u8y7Dd3b3b27zLANvdvb3bvMsA2927vb27DACwu7u7zbsMAAAA293MywAAAACwy7wLAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "asteroid"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
