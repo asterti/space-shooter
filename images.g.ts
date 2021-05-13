@@ -3,6 +3,25 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
+            case "D9-`T_l?fAeyK*B}I;lD":
+            case "bullet":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . 2 3 1 3 2 . . . . . . 
+. . . . . 3 1 1 1 3 . . . . . . 
+. . . . . 3 1 1 1 3 . . . . . . 
+. . . . . 3 1 1 1 3 . . . . . . 
+. . . . . 3 1 1 1 2 . . . . . . 
+. . . . . 2 1 1 1 2 . . . . . . 
+. . . . . 2 3 1 3 2 . . . . . . 
+. . . . . . 3 1 3 . . . . . . . 
+. . . . . . 2 1 2 . . . . . . . 
+. . . . . . 2 1 2 . . . . . . . 
+. . . . . . 2 1 2 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
             case "Wdb{9F4_6*C/:Um,b@U#":
             case "girl":return img`
 . f f f . f f f f . f f f . 
@@ -40,21 +59,6 @@ c c b b c c c c b d d d b c c b
 . . c c c c c b b b b b b b c . 
 . . . . . . c c b b b b c c . . 
 . . . . . . . . c c c c . . . . 
-`;
-            case "D9-`T_l?fAeyK*B}I;lD":
-            case "bullet":return img`
-. 2 2 2 . 
-2 3 1 3 2 
-3 1 1 1 3 
-3 1 1 1 3 
-3 1 1 1 3 
-3 1 1 1 2 
-2 1 1 1 2 
-2 3 1 3 2 
-. 3 1 3 . 
-. 2 1 2 . 
-. 2 1 2 . 
-. 2 1 2 . 
 `;
         }
         return null;
