@@ -14,9 +14,7 @@ sprites.on_overlap(SpriteKind.enemy, SpriteKind.projectile, on_on_overlap)
 
 def projetile():
     global projectile
-    projectile = sprites.create_projectile_from_sprite(assets.image("""
-        bullet
-    """), player_girl, 0, -66)
+    projectile = sprites.create_projectile_from_sprite(assets.image("""bullet"""), player_girl, 0, -66)
 
 def on_on_overlap2(sprite, otherSprite):
     sprite.destroy(effects.spray, 100)
