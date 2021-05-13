@@ -25,8 +25,21 @@ function overlap () {
     astroid.setVelocity(0, 35)
     pause(200)
 }
-let projectile: Sprite = null
+function spawner (num: number) {
+    while (true) {
+        for (let index = 0; index < num; index++) {
+            astroid = sprites.create(assets.image`asteroid`, SpriteKind.Enemy)
+            astroid.setFlag(SpriteFlag.DestroyOnWall, true)
+            for (let index = 0; index < 1; index++) {
+                astroid.setPosition(randint(0, scene.screenWidth()), 5)
+                overlap()
+            }
+        }
+        pause(7000)
+    }
+}
 let astroid: Sprite = null
+let projectile: Sprite = null
 let player_girl: Sprite = null
 effects.starField.startScreenEffect()
 game.showLongText("Space Shooter", DialogLayout.Center)
@@ -34,17 +47,11 @@ player_girl = sprites.create(assets.image`girl`, SpriteKind.Player)
 player_girl.setPosition(79, 103)
 projetile()
 info.setLife(3)
-pause(2000)
 player_girl.setStayInScreen(true)
 controller.moveSprite(player_girl)
-while (true) {
-    for (let index = 0; index < 10; index++) {
-        astroid = sprites.create(assets.image`asteroid`, SpriteKind.Enemy)
-        astroid.setFlag(SpriteFlag.DestroyOnWall, true)
-        for (let index = 0; index < 1; index++) {
-            astroid.setPosition(randint(0, scene.screenWidth()), 5)
-            overlap()
-        }
-    }
-    pause(7000)
+pause(2000)
+let num = 10
+if (info.score() >= 25) {
+    num += 5
 }
+spawner(num)
