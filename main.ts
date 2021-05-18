@@ -1,6 +1,12 @@
+enum ActionKind {
+    Walking,
+    Idle,
+    Jumping,
+    damaged
+}
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projetile()
-    projectile.setPosition(player_girl.x, player_girl.y + -10)
+    projectile.setPosition(ship.x, ship.y + -10)
     music.pewPew.play()
     pause(500)
 })
@@ -11,12 +17,15 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
     info.changeScoreBy(1)
 })
 function projetile () {
-    projectile = sprites.createProjectileFromSprite(assets.image`bullet`, player_girl, 0, -66)
+    projectile = sprites.createProjectileFromSprite(assets.image`bullet`, ship, 0, -66)
 }
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSprite) {
+    hurt()
     sprite.destroy(effects.spray, 100)
     music.powerDown.play()
     info.changeLifeBy(-1)
+    pause(1000)
+    animation.stopAnimation(animation.AnimationTypes.All, ship)
 })
 function overlap () {
     while (astroid.overlapsWith(astroid)) {
@@ -24,6 +33,13 @@ function overlap () {
     }
     astroid.setVelocity(0, 35)
     pause(200)
+}
+function hurt () {
+    hurt_anim = animation.createAnimation(ActionKind.damaged, 150)
+    animation.setAction(ship, ActionKind.damaged)
+    animation.attachAnimation(ship, hurt_anim)
+    hurt_anim.addAnimationFrame(assets.image`hit_ship`)
+    hurt_anim.addAnimationFrame(assets.image`ship`)
 }
 function spawner (num: number) {
     while (true) {
@@ -38,20 +54,24 @@ function spawner (num: number) {
         pause(7000)
     }
 }
+let hurt_anim: animation.Animation = null
 let astroid: Sprite = null
 let projectile: Sprite = null
-let player_girl: Sprite = null
+let ship: Sprite = null
 effects.starField.startScreenEffect()
 game.showLongText("Space Shooter", DialogLayout.Center)
-player_girl = sprites.create(assets.image`girl`, SpriteKind.Player)
-player_girl.setPosition(79, 103)
+ship = sprites.create(assets.image`ship`, SpriteKind.Player)
+ship.setPosition(79, 103)
 projetile()
 info.setLife(3)
-player_girl.setStayInScreen(true)
-controller.moveSprite(player_girl)
+ship.setStayInScreen(true)
+controller.moveSprite(ship)
 pause(2000)
 let num = 10
-if (info.score() >= 25) {
-    num += 5
-}
 spawner(num)
+game.onUpdate(function () {
+    if (info.score() == 25) {
+        num = 20
+    }
+    spawner(num)
+})
