@@ -1,9 +1,4 @@
 {
-    "$j%%dW:s2s~HZ?q?_=y@": {
-        "data": "hwQQABAAAAAAAAAAzMwAAAAAAMzLywwAAAAA3Lu8zAAAAMzcvbzMAMDMu7zdzMwAvN27y93LzADc3d2728vMDNvd3bvby7wM293du9u7vMvb3d2929u8y7Dd3b3b27zLANvdvb3bvMsA2927vb27DACwu7u7zbsMAAAA293MywAAAACwy7wLAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "asteroid"
-    },
     "D9-`T_l?fAeyK*B}I;lD": {
         "data": "hwQCAAUAAABSVQUAUlUFAA==",
         "mimeType": "image/x-mkcd-f4",
@@ -18,6 +13,11 @@
         "data": "hwQUABQAAAAAAAAAACAiAgAAAAAAAAAAACIiIgAAAAAAAAAAIiIiIgAAAAAAAAAgIiIiIgAAAAAAACIiIiIiIgIAAAAAICIiIiIiIgIAAAAAICIiIiIiIgIAAAAAIiIiIiIiIpIIAAAgIiIiIiIiIoKZAAAiIiIiIiIiIpKJAAAgIiIiIiIiIpKYAAAAIiIiIiIiIoKJAAAAICIiIiIiIpIIAAAAICIiIiIiIgIAAAAAACIiIiIiIgIAAAAAAAAgIiIiIgAAAAAAAAAAIiIiIgAAAAAAAAAAACIiIgAAAAAAAAAAACAiAgAAAAAAAAAAAAAAAAAAAAA=",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "hit_ship"
+    },
+    "$j%%dW:s2s~HZ?q?_=y@": {
+        "data": "hwQQABAAAAAAAADAzAwAAAAAAKyqzAAAAMDM/K/LDAAAzMz8z7oMAMD/qsz/uswMwPyvyv+6uwvA/K/MzLqsu8D6rKysu8xqzKq6u2y2zGrMqsq6Zru7xsyq/2+7q7rLzMz/vLvKugzAqv+6u8vLAACsqrqquwwAAMCqzKqqAAAAAMzMzAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "asteroid"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",

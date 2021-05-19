@@ -29,7 +29,7 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSp
 })
 function overlap () {
     while (astroid.overlapsWith(astroid)) {
-        astroid.setPosition(randint(0, 99), 5)
+        astroid.setPosition(randint(10, scene.screenWidth() - 10), 5)
     }
     astroid.setVelocity(0, 35)
     pause(200)
@@ -47,7 +47,7 @@ function spawner (num: number) {
             astroid = sprites.create(assets.image`asteroid`, SpriteKind.Enemy)
             astroid.setFlag(SpriteFlag.DestroyOnWall, true)
             for (let index = 0; index < 1; index++) {
-                astroid.setPosition(randint(0, scene.screenWidth()), 5)
+                astroid.setPosition(randint(10, scene.screenWidth() - 10), 5)
                 overlap()
             }
         }
@@ -69,9 +69,3 @@ controller.moveSprite(ship)
 pause(2000)
 let num = 10
 spawner(num)
-game.onUpdate(function () {
-    if (info.score() == 25) {
-        num = 20
-    }
-    spawner(num)
-})

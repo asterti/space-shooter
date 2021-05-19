@@ -3,25 +3,6 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "$j%%dW:s2s~HZ?q?_=y@":
-            case "asteroid":return img`
-. . . . . c c b b b . . . . . . 
-. . . . c b d d d d b . . . . . 
-. . . . c d d d d d d b b . . . 
-. . . . c d d d d d d d d b . . 
-. . . c b b d d d d d d d b . . 
-. . . c b b d d d d d d d b . . 
-. c c c c b b b b d d d b b b . 
-. c d d b c b b b b b b b b d b 
-c b b d d d b b b b b d d b d b 
-c c b b d d d d d d d b b b d c 
-c b c c c b b b b b b b d d c c 
-c c b b c c c c b d d d b c c b 
-. c c c c c c c c c c c b b b b 
-. . c c c c c b b b b b b b c . 
-. . . . . . c c b b b b c c . . 
-. . . . . . . . c c c c . . . . 
-`;
             case "D9-`T_l?fAeyK*B}I;lD":
             case "bullet":return img`
 2 2 
@@ -79,6 +60,25 @@ c c b b c c c c b d d d b c c b
 .......989989.......
 .......899898.......
 ........9898........
+`;
+            case "$j%%dW:s2s~HZ?q?_=y@":
+            case "asteroid":return img`
+. . . . . . . . c c c c . . . . 
+. . . . c c c c c c c c c . . . 
+. . . c f c c a a a a c a c . . 
+. . c c f f f f a a a c a a c . 
+. . c c a f f c a a f f f a a c 
+. . c c a a a a b c f f f a a c 
+. c c c c a c c b a f c a a c c 
+c a f f c c c a b b 6 b b b c c 
+c a f f f f c c c 6 b b b a a c 
+c a a c f f c a 6 6 b b b a a c 
+c c b a a a a b 6 b b a b b a . 
+. c c b b b b b b b a c c b a . 
+. . c c c b c c c b a a b c . . 
+. . . . c b a c c b b b c . . . 
+. . . . c b b a a 6 b c . . . . 
+. . . . . . b 6 6 c c . . . . . 
 `;
         }
         return null;
