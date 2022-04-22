@@ -42,7 +42,7 @@ let astroid: Sprite = null
 let projectile: Sprite = null
 let player_girl: Sprite = null
 effects.starField.startScreenEffect()
-game.showLongText("Space Shooter", DialogLayout.Center)
+game.showLongText("Space Shooter To shot press 'A'(Z)", DialogLayout.Center)
 player_girl = sprites.create(assets.image`girl`, SpriteKind.Player)
 player_girl.setPosition(79, 103)
 projetile()
